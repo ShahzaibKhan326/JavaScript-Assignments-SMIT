@@ -111,7 +111,51 @@ var user_Name = "shahzaib";
 var productName = "shirts";
 var quantity = 3;
  
-console.log(user_Name + " order " + quantity + " " + productName + " from cloting store")
+// console.log(user_Name + " order " + quantity + " " + productName + " from cloting store");
+
+// --------------------------CHAPTER 4------------------------------------
+
+//chapter 4 ( Q1)
+
+var  name01="shahzaib" ; var num= 22; var learning = "JavaScript";
+
+//chapter 4 ( Q2)
+
+// ---legal---
+ var user_name;
+ var $user_name;
+ var username;
+ var userName;
+ var user_name;
+ var userName01
+
+ //---illigal---
+
+ var 1username; //starting with a number
+
+ var USERNAME ="Ali"; // case sensitive
+ var username /// this not same as  USERNAME
+ console.log(USERNAME);
+ console.log(username)
+
+ var user name = "shahzaib" // space between numbers
+
+ var user@Name ="someone" // using any symbol (excluded $  and  _ )
+
+ var var ="value";  //using js keyword or method as variables;
+
+
+
+ /// ---- -----------Rules for naming JS Variables---------------
+
+//variable name can  only containe,  numbers , $ and _. for Example $my_1stVariable
+
+//variable must begin with a letter , $ or _ . For Example : $name ,_name or name
+
+//variable names are csse sensitive.
+
+//variables names should not be JS keywords.
+
 
 
 
