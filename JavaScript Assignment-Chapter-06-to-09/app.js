@@ -232,11 +232,34 @@
 
 // -------CHAPTER 06 QUESTION (4)---------
 
-// userInput = prompt("Enter a Table Number");
-if(!userInput)
-{
-    console.log("false")
-}
-else {
-    console.log("true")
-}
+// var defaultTable =5;
+// var tableNumber =Number(prompt("Enter a Table Number!"));
+// var userInput = tableNumber;
+// if(!userInput)
+// {
+//     console.log("Table of " + defaultTable + " is following:" )
+// console.log(defaultTable + " X  1 = " + (defaultTable*1));
+// console.log(defaultTable + " X  2 = " + (defaultTable*2));
+// console.log(defaultTable + " X  3 = " + (defaultTable*3));
+// console.log(defaultTable + " X  4 = " + (defaultTable*4));
+// console.log(defaultTable + " X  5 = " + (defaultTable*5));
+// console.log(defaultTable + " X  6 = " + (defaultTable*6));
+// console.log(defaultTable + " X  7 = " + (defaultTable*7));
+// console.log(defaultTable + " X  8 = " + (defaultTable*8));
+// console.log(defaultTable + " X  9 = " + (defaultTable*9));
+// console.log(defaultTable + " X  10 = " + (defaultTable*10));
+// }
+// else {
+
+// console.log("Table of " + tableNumber + " is following:" )
+// console.log(tableNumber + " X  1 = " + (tableNumber*1));
+// console.log(tableNumber + " X  2 = " + (tableNumber*2));
+// console.log(tableNumber + " X  3 = " + (tableNumber*3));
+// console.log(tableNumber + " X  4 = " + (tableNumber*4));
+// console.log(tableNumber + " X  5 = " + (tableNumber*5));
+// console.log(tableNumber + " X  6 = " + (tableNumber*6));
+// console.log(tableNumber + " X  7 = " + (tableNumber*7));
+// console.log(tableNumber + " X  8 = " + (tableNumber*8));
+// console.log(tableNumber + " X  9 = " + (tableNumber*9));
+// console.log(tableNumber + " X  10 = " + (tableNumber*10));
+// }
