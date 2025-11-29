@@ -230,7 +230,7 @@
 // alert(output); 
 // }
 
-// -------CHAPTER 06 QUESTION (4)---------
+// -------CHAPTER 09 QUESTION (4-5)---------
 
 // var defaultTable =5;
 // var tableNumber =Number(prompt("Enter a Table Number!"));
@@ -263,3 +263,19 @@
 // console.log(tableNumber + " X  9 = " + (tableNumber*9));
 // console.log(tableNumber + " X  10 = " + (tableNumber*10));
 // }
+
+// -------CHAPTER 09 QUESTION (6)---------
+
+// var subject1 = prompt("Enter your First Subject Name!")
+// var sub01_Obtain_Mark =Number(prompt("Enter "+ subject1 +" subject Obtained Mark"));
+// var subject2 = prompt("Enter your Second Subject Name!")
+// var sub02_Obtain_Mark =Number(prompt("Enter  "+ subject2 +" subject  Obtained Mark"));
+// var subject3 = prompt("Enter your Third Subject Name!")
+// var sub03_Obtain_Mark =Number(prompt("Enter  "+ subject3 +" subject  Obtained Mark"));
+
+// var Total_Marks_Per_Subject =100;
+
+// console.log("Total Subjects and its Marks percentage!")
+// console.log(subject1 + " " + Total_Marks_Per_Subject + " " +((sub01_Obtain_Mark/Total_Marks_Per_Subject)*100) + "%")
+// console.log(subject2 + " " + Total_Marks_Per_Subject + " " + ((sub02_Obtain_Mark/Total_Marks_Per_Subject)*100) + "%" )
+// console.log(subject3 + " " + Total_Marks_Per_Subject + " " + ((sub03_Obtain_Mark/Total_Marks_Per_Subject)*100)+ "%")
