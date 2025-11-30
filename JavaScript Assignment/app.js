@@ -87,6 +87,33 @@ var Book ="A smarter way to learn JS";
 // alert("꧁༒☬star☬༒꧂");
 
 
+// ----------------------------------CHAPTER 03--------------------------------------
+
+//chapter 3 ( Q1)
+
+ var myAge = 22;
+//  alert("I am " + myage + " year old")
+
+//chapter 3 ( Q2)
+
+var pageVistedCount =14;
+// alert("you visited this website " + pageVistedCount +" time!");
+
+//chapter 3 ( Q3)
+
+var birthYear ;
+birthYear = 2000;
+// alert("My birth Year is : "birthYear);
+
+//chapter 3 ( Q4)
+
+var user_Name = "shahzaib";
+var productName = "shirts";
+var quantity = 3;
+ 
+console.log(user_Name + " order " + quantity + " " + productName + " from cloting store")
+
+
 
 
 
