@@ -1,2 +1,2 @@
 # JS ASSIGNMENT (SMIT)
-js assignment
+Saylani JavaScript Assignments
