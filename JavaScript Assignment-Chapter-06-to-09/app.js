@@ -178,3 +178,51 @@
 // console.log("Per day Consumption :" + perDay)
 // console.log("Needed Resourses in  Remaining Years in total : "+ neededRes)
 
+
+// ---------------------------CCHAPTER (6-TO-9)-------------------------------------------------------
+
+
+// -------CHAPTER 06 QUESTION (1)---------
+
+// var N = 10;
+// console.log("The value of N is : " + N )
+// // --------------------------------------------
+// console.log("The valus of ++N is: " +  ++N)
+// console.log("Now the Value is: " + N)
+// // ---------------------------------------------
+// console.log("The valus of ++N is: " +  N++)
+// console.log("Now the Value is: " + N)
+// // --------------------------------------------
+// console.log("The valus of ++N is: " +  --N)
+// console.log("Now the Value is: " + N)
+// // ---------------------------------------------
+// console.log("The valus of ++N is: " +  N--)
+// console.log("Now the Value is: " + N)
+
+
+// -------CHAPTER 06 QUESTION (2)---------
+
+// var a = 2;
+// var b = 1;
+
+// console.log("A = 2 ;  B = 1");
+
+// console.log("A is : : " + a)
+// console.log("B is : " + b)
+// var result = --a - --b + ++b +b--;
+// console.log("Result is : " + result )
+
+// -------CHAPTER 06 QUESTION (3)---------
+
+var userName =prompt("Please enter you Name!");
+if(!userName || userName === "")
+{
+    alert("Please Enter a Valid Name: ")
+    userName =prompt("Please Enter your Name Again!")
+}
+else 
+{
+var output  ="Hi " + userName  + " \nhope you are fine!";
+alert(output); 
+}
+
