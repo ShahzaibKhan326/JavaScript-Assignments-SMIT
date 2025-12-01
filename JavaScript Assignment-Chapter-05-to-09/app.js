@@ -230,13 +230,52 @@
 // alert(output); 
 // }
 
-// -------CHAPTER 06 QUESTION (4)---------
+// -------CHAPTER 09 QUESTION (4-5)---------
 
-// userInput = prompt("Enter a Table Number");
-if(!userInput)
-{
-    console.log("false")
-}
-else {
-    console.log("true")
-}
+// var defaultTable =5;
+// var tableNumber =Number(prompt("Enter a Table Number!"));
+// var userInput = tableNumber;
+// if(!userInput)
+// {
+//     console.log("Table of " + defaultTable + " is following:" )
+// console.log(defaultTable + " X  1 = " + (defaultTable*1));
+// console.log(defaultTable + " X  2 = " + (defaultTable*2));
+// console.log(defaultTable + " X  3 = " + (defaultTable*3));
+// console.log(defaultTable + " X  4 = " + (defaultTable*4));
+// console.log(defaultTable + " X  5 = " + (defaultTable*5));
+// console.log(defaultTable + " X  6 = " + (defaultTable*6));
+// console.log(defaultTable + " X  7 = " + (defaultTable*7));
+// console.log(defaultTable + " X  8 = " + (defaultTable*8));
+// console.log(defaultTable + " X  9 = " + (defaultTable*9));
+// console.log(defaultTable + " X  10 = " + (defaultTable*10));
+// }
+// else {
+
+// console.log("Table of " + tableNumber + " is following:" )
+// console.log(tableNumber + " X  1 = " + (tableNumber*1));
+// console.log(tableNumber + " X  2 = " + (tableNumber*2));
+// console.log(tableNumber + " X  3 = " + (tableNumber*3));
+// console.log(tableNumber + " X  4 = " + (tableNumber*4));
+// console.log(tableNumber + " X  5 = " + (tableNumber*5));
+// console.log(tableNumber + " X  6 = " + (tableNumber*6));
+// console.log(tableNumber + " X  7 = " + (tableNumber*7));
+// console.log(tableNumber + " X  8 = " + (tableNumber*8));
+// console.log(tableNumber + " X  9 = " + (tableNumber*9));
+// console.log(tableNumber + " X  10 = " + (tableNumber*10));
+// }
+
+// -------CHAPTER 09 QUESTION (6)---------
+
+// var subject1 = prompt("Enter your First Subject Name!")
+// var sub01_Obtain_Mark =Number(prompt("Enter "+ subject1 +" subject Obtained Mark"));
+// var subject2 = prompt("Enter your Second Subject Name!")
+// var sub02_Obtain_Mark =Number(prompt("Enter  "+ subject2 +" subject  Obtained Mark"));
+// var subject3 = prompt("Enter your Third Subject Name!")
+// var sub03_Obtain_Mark =Number(prompt("Enter  "+ subject3 +" subject  Obtained Mark"));
+
+// var Total_Marks_Per_Subject =100;
+
+// console.log("Total Subjects and its Marks percentage!")
+// console.log(subject1 + " " + Total_Marks_Per_Subject + " " +((sub01_Obtain_Mark/Total_Marks_Per_Subject)*100) + "%")
+// console.log(subject2 + " " + Total_Marks_Per_Subject + " " + ((sub02_Obtain_Mark/Total_Marks_Per_Subject)*100) + "%" )
+// console.log(subject3 + " " + Total_Marks_Per_Subject + " " + ((sub03_Obtain_Mark/Total_Marks_Per_Subject)*100)+ "%")
