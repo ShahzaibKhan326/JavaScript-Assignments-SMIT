@@ -150,4 +150,14 @@
 // var exactAge= (currentYear-birthYear);
 // console.log(exactAge);
 
-// -------CHAPTER 05 QUESTION (11)---------
+// -------CHAPTER 05 QUESTION (12)---------
+
+
+// ----------------The Geometrizer-------------------------
+
+// var radius =20;
+// var circumference =  (20*2)*3.142;
+// console.log(circumference)
+
+
+// -------CHAPTER 05 QUESTION (13)---------
