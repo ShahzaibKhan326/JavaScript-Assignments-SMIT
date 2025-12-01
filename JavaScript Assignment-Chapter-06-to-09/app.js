@@ -161,3 +161,20 @@
 
 
 // -------CHAPTER 05 QUESTION (13)---------
+
+// var snack ="Cheetos";
+// var ageNow = 22;
+// var endAge = 100;
+// var perDay = 2;
+
+// console.log("current Age :" + ageNow)
+// console.log("End year :" + endAge)
+
+// var remainignAge = (endAge-ageNow);
+// console.log("Remaining Age Left : " +remainignAge)
+
+// var yearToDays = (remainignAge*365.25);
+// var  neededRes = (yearToDays*2);
+// console.log("Per day Consumption :" + perDay)
+// console.log("Needed Resourses in  Remaining Years in total : "+ neededRes)
+
