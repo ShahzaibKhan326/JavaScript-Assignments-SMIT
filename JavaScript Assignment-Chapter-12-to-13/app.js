@@ -139,3 +139,29 @@
 // greeting = "Good evening";
 // console.log(greeting);
 // }
+
+//--------------Question (7)-----------------------
+
+// var userTime = prompt("Enter a time in 24 format Example 13 = 1pm");
+
+// if(!userTime || userTime.length <=3 )
+// {
+//     console.log("Please Entern valid 4 digit Number Example 1200 or 2300")
+// }
+// else if (userTime >= 0 && userTime < 1200)
+// {
+//  console.log("Good morning!");
+// }
+// else if (userTime >= 1200 && userTime < 1700)
+// {
+//  console.log("Good afternoon");
+// }
+// else if(userTime >=1700 && userTime < 2100)
+// {
+//     console.log("Good evening!")
+// }
+// else if(userTime>=2100 && userTime <=2359)
+//     console.log("Good night!")
+// else {
+//     console.log("entered  invalid time")
+// }
