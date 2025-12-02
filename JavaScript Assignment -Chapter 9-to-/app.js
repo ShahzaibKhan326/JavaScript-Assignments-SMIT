@@ -213,27 +213,28 @@
 
 // -------------------Question 11------------------------------
 
-var user_Number01 = Number(prompt("Enter your first Number to Calculation"));
-var user_Number02 = Number(prompt("Enter your Second Number to Calculation"));
-var user_Operator = Number(prompt("Enter desire Symbole for Calculation"));
+// var user_Number01 = Number(prompt("Enter your first Number to Calculation"));
+// var user_Number02 = Number(prompt("Enter your Second Number to Calculation"));
+// var user_Operator = prompt("Enter desire Symbole for Calculation");
 
-if(user_Operator === "+")
-{
-    console.log("Addition : "+ user_Number01+user_Number02);
-}
-if(user_Operator === "-" )
-{
-    console.log("Subtraction : "+user_Number01-user_Number02);
-}
-if(user_Operator === "*" )
-{
-    console.log("Muiltiplication : "+user_Number01*user_Number02);
-}
-if(user_Operator === "/" )
-{
-    console.log("Divide : "+user_Number01/user_Number02);
-}
-if(user_Operator === "%" )
-{
-    console.log("Remainder : "+user_Number01%user_Number02);
-}
+// if(user_Operator === "+")
+// {
+//     console.log("Addition : "+ (user_Number01+user_Number02));
+// }
+// if(user_Operator === "-" )
+// {
+//     console.log("Subtraction : "+(user_Number01-user_Number02));
+// }
+// if(user_Operator === "*" )
+// {
+//     console.log("Muiltiplication : "+(user_Number01*user_Number02));
+// }
+// if(user_Operator === "/" )
+// {
+//     console.log("Divide : "+(user_Number01/user_Number02));
+// }
+// if(user_Operator === "%" )
+// {
+//     console.log("Remainder : "+(user_Number01%user_Number02));
+// }
+
