@@ -53,3 +53,63 @@
 // }
 
 //--------------Question (3)-----------------------
+
+// var user_input = Number(prompt("Enter a Number to Check its Positive or Nagative Number"));
+
+// if(user_input > 0)
+// {
+//     console.log("Your Number is a Positive Number")
+// }
+// else if(user_input < 0)
+// {
+//     console.log("Your Number is a Negative Number")
+// }
+// else if(user_input === 0)
+// {
+//     console.log("Your Number is a  is Zero")
+// }
+// else {
+//     console.log("Not a Number")
+// }
+
+//--------------Question (4)-----------------------
+
+// var user_input = prompt("Enter Character to See its Vowel or Consonant") ;
+
+// var ch = user_input.charAt(0);
+// var ch_loc = ch.toLowerCase();
+// if(!user_input)
+// {
+//     console.log("Enter a valid character")
+// }
+// else if(ch_loc === "a" || ch_loc === "i"  || ch_loc === "e"  || ch_loc === "o"  || ch_loc === "u"  )
+// {
+//     console.log("Your Character is Vowel");
+// }
+// else if(ch.charCodeAt(0) >=48 || ch.charCodeAt(0) <=57)
+// {
+//     console.log("Your Entered A Number Please Enter A Character!")
+// }
+// else 
+// {
+//     console.log("Your Character is Consonant");
+// }
+
+//--------------Question (5)-----------------------
+
+// var Ac_Password = "12345";
+// var userPassword = prompt("Please enter your password");
+
+// if(userPassword === "")
+// {
+//     console.log("Please enter your password!")
+// }
+// else if(userPassword === Ac_Password)
+// {
+//  console.log("Correct! The Password you Entered matches the original password" )
+// }
+// else {
+//     console.log("Incorrect password")
+// }
+
+//--------------Question (6)-----------------------
