@@ -50,9 +50,9 @@
 
 // ---------------------QUESTION (9)---------------------------------------
 
- var colors = ["lime","golden","silver"]
- console.log("Array Befor :")
-console.log( colors)
+//  var colors = ["lime","golden","silver"]
+//  console.log("Array Befor :")
+// console.log( colors)
 
 // --------A---------------
 // var user_Color = prompt("Enter user Desire color !")
@@ -109,3 +109,12 @@ console.log( colors)
 // var selected_cites = cites.slice(2,4)
 // console.log("Selected cites list:")
 // console.log(selected_cites)
+
+// ---------------------QUESTION (12)---------------------------------------
+
+// var arr = ["This ", " is ", " my ", " cat"];
+// console.log(arr);
+// var joined_arr = arr.join(' ');
+// console.log(joined_arr);
+
+// ---------------------QUESTION (13)---------------------------------------
