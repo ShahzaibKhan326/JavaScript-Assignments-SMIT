@@ -21,3 +21,7 @@ var num_student_age = [18 , 17 , 13 , 19];
 var have_Id_card = [true , false]
 
 // ---------------------QUESTION (6)---------------------------------------
+
+var mix_array = ["Hello",18 ,true , "shahzaib"]
+
+// ---------------------QUESTION (7)---------------------------------------
