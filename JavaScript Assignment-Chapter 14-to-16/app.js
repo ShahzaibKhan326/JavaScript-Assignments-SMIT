@@ -88,3 +88,24 @@ console.log( colors)
 // user_Color)
 // console.log(colors);
 
+// --------G---------------
+// var user_index = prompt("Enter the index Number of item to be deleted!")
+// var user_count = prompt("Enter the Numeber of item to be deleted!")
+
+// colors.splice(user_index,user_count)
+// console.log(colors)
+
+
+// ---------------------QUESTION (10)---------------------------------------
+
+// var student_score = [320,230,480,120]
+// console.log(student_score)
+// var sort_student_score = student_score.sort();
+// console.log( sort_student_score)
+
+// ---------------------QUESTION (11)---------------------------------------
+
+// var cites  = ["Karachi","Lahore","Islamabad","Quetta","Peshawar"];
+// var selected_cites = cites.slice(2,4)
+// console.log("Selected cites list:")
+// console.log(selected_cites)
