@@ -114,3 +114,24 @@
 // }
 
 //------------------Question (8)------------------------
+
+// A = [24, 53, 78, 91, 12]
+
+// var A_sort =A.sort();
+// console.log(A_sort);
+// console.log("The largest number is " + A_sort.pop())
+
+//------------------Question (9)------------------------
+
+// A = [24, 53, 78, 91, 12]
+
+// var A_sort =A.sort();
+// console.log(A_sort);
+// console.log("The smallest number is " + A_sort.shift())
+
+//------------------Question (10)------------------------
+
+for(i =5 ; i <= 100 ; i++)
+{
+    console.log(i+5)
+}
