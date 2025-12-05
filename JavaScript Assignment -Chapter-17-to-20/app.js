@@ -89,3 +89,28 @@
 //     console.log(i +"K")
 //    }
 // }
+
+//------------------Question (7)------------------------
+
+// A = ["cake", "apple pie", "cookie", "chips", "patties"]
+
+// var user_input =prompt("Enter the text to search!")
+// var found=false;
+
+// console.log("Array :")
+// console.log(A)
+// for(var i = 0 ; i<=A.length ; i ++)
+// {
+//     if(user_input == A[i])
+//     {
+//         console.log("your file founded at index " +  i)
+//         found =true;   
+//     }
+// }
+
+// if(found === false)
+// {
+//     console.log("your file was not found")
+// }
+
+//------------------Question (8)------------------------
