@@ -23,13 +23,7 @@
 
 
 // var greeting = "Hello World";
-// var greeting_index =  greeting.indexOf('l');
-// console.log("Index of 'l' : " + greeting_index)
+// console.log(greeting);
+// var greeting_index =  greeting.lastIndexOf('l');
+// console.log("Index of 'l' : " + greeting_index);
 
-//  var text =" i live in karachi i watching a documentery on World War II and its quite intresting"
-//  var firstChar = text.indexOf("World War II");
-//  console.log(firstChar)
-//  if (firstChar !== -1) {
-//  text = text.slice(0, firstChar) + "the Second World War" + text.slice(firstChar + 12);
-//  }
-//  console.log(text);
