@@ -37,7 +37,27 @@
 // -------------Question (6)----------------------------
 
 
-var user_first_name = prompt("Enter your first name:")
-var user_last_name = prompt("Enter your last name:")
-var full_name = user_first_name.concat("",user_last_name)
-console.log(full_name)
+// var user_first_name = prompt("Enter your first name:")
+// var user_last_name = prompt("Enter your last name:")
+// var full_name = user_first_name.concat("",user_last_name)
+// console.log(full_name)
+
+// -------------Question (7)----------------------------
+
+// var  city = "Hyderbad";
+// console.log("City :" + city)
+// var replace_city =  city.replace("Hyder","Islama")
+// console.log("After Replacement : "+replace_city);
+
+// -------------Question (8)----------------------------
+
+var message = "Ali and Sami are best friends. They play cricket and football together.";
+
+for (i =0 ; i< message.length;i++)
+{
+    if(message.indexOf(and) !== -1)
+    {
+        message.slice()
+    }
+}
+>>>>>>> Stashed changes
