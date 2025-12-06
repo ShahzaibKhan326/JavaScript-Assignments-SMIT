@@ -72,3 +72,20 @@
 //  userInput_capital = userInput.toUpperCase();
 //  console.log("Input : "+userInput);
 //  console.log("Output : "+userInput_capital);
+
+// -------------Question (11)----------------------------
+
+// var userInput = prompt("Enter a Word to to convert it to Title-Case!")
+//  console.log("User-Input : " + userInput)
+//  var firstChar = userInput.slice(0,1);
+//  var otherChar = userInput.slice(1)
+
+//  var firstChar_capital = firstChar.toUpperCase();
+//  var otherChar_lower = otherChar.toLowerCase();
+
+//  var title_case = firstChar_capital + otherChar_lower;
+//  console.log("Output : "+title_case);
+
+// -------------Question (12)----------------------------
+
+var  num = 35.36;
