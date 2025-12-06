@@ -88,4 +88,10 @@
 
 // -------------Question (12)----------------------------
 
-var  num = 35.36;
+// var  num = 35.36;
+//  console.log("Actual Value : "+num)
+//  console.log("Actual Type : " + typeof num)
+// var num_string = num.toString();
+// num_string = num_string.replace(".","")
+// console.log("After Value : " + num_string)
+// console.log("After Type : " + typeof num_string )
