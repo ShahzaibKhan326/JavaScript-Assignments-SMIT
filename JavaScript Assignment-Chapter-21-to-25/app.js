@@ -117,3 +117,46 @@
 // {
 //     console.log("your word is not valid ")
 // }
+
+// -------------Question (14)----------------------------
+
+// var Bakery_items = ["cake","apple pie","cookie","chips","patties"];
+// console.log("Bakery Item : " + Bakery_items );
+// var user_item = prompt("Avaiable items : (cake , apple pie ,cookie , chips , patties)\n Enter to search from above or else");
+// var user_item= user_item.toLowerCase();
+// var user_item_index = Bakery_items.indexOf(user_item)
+// if (user_item_index !== -1)
+// {
+//      console.log("Your item is found in the list ")
+//      console.log("At Index : " + user_item_index)
+// }
+// else
+// {
+//      console.log("Your item is not found in the list. ")
+    
+// }
+
+// -------------Question (15)----------------------------
+
+// var user_input =  prompt("Enter a strong password");
+
+var user_input = "shahzaib";
+var isValid =true;
+var firstChar = user_input.charAt(0)
+// console.log(firstChar)
+
+for(var i = 0 ; i <user_input.length; i++)
+{
+    var code = user_input.charCodeAt(i)
+    if(firstChar.charCodeAt(0) >= 48 && firstChar.charCodeAt(0) <=57)
+    {
+        console.log("Password can not start with a numner!")
+        break;
+    }
+    else if(code >= 65 && code <=90 || code >= 97 && code <=122 )
+      {
+        isValid=true;
+        break
+      }
+}
+// console.log(code)
