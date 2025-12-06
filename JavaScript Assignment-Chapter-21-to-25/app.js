@@ -34,3 +34,10 @@
 // var index_03 = country_people.charAt(3);
 // console.log("Character at index 3 : "+index_03)
 
+// -------------Question (6)----------------------------
+
+
+var user_first_name = prompt("Enter your first name:")
+var user_last_name = prompt("Enter your last name:")
+var full_name = user_first_name.concat("",user_last_name)
+console.log(full_name)
