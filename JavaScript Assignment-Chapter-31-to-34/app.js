@@ -7,4 +7,16 @@
 
 // -------------------Question (2)------------------------------
 
-                                                
+// var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+
+// var my_Date =  new Date();
+// var my_Month = my_Date.getMonth();
+// console.log("Current month: "+months[my_Month])
+
+// -------------------Question (3)------------------------------
+
+// var days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+
+// var my_Date =  new Date();
+// var my_day = my_Date.getDay();
+// console.log("Today : "+ days[my_day])
