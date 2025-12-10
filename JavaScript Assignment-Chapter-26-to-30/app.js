@@ -65,3 +65,12 @@
 // {
 //     console.log("Random coin value: Tails" )
 // }
+
+// ------------------Qustion (6)--------------------
+
+// var max_value=100;
+// var min_value=1;
+
+// var random_number  = Math.floor(Math.random()*max_value)+min_value;
+// console.log("Random Number between 1 and 100: ")
+// console.log("Number is : "  + random_number)
