@@ -39,7 +39,7 @@
 
 // ------------------Qustion (4)--------------------
 
-var dice_limit = 100;
+var dice_limit = 6;
 
 var random_dice = Math.random();
 
