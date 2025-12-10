@@ -74,3 +74,9 @@
 // var random_number  = Math.floor(Math.random()*max_value)+min_value;
 // console.log("Random Number between 1 and 100: ")
 // console.log("Number is : "  + random_number)
+
+// ------------------Qustion (7)--------------------
+ 
+// var user_weight = prompt("Enter your weight in kilograme");
+// var user_weight = parseFloat(user_weight)
+// console.log("The weight of the user is \n"+user_weight +" kilogrames.");
