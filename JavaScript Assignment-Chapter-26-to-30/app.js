@@ -80,3 +80,27 @@
 // var user_weight = prompt("Enter your weight in kilograme");
 // var user_weight = parseFloat(user_weight)
 // console.log("The weight of the user is \n"+user_weight +" kilogrames.");
+
+// ------------------Qustion (8)--------------------
+ 
+var my_random_num = Math.floor(Math.random()*10)+1;
+
+var user_random = prompt("Enter Random number between 1 and 10");
+if(user_random < 1 || user_random > 10)
+{
+    console.log("Please enter Number between 1 and 10!")
+}
+else if(user_random === my_random_num)
+{
+    console.log("Congratualtion Your number is match with the random number!")
+}
+else if(user_random+1 === my_random_num || user_random-1 === my_random_num)
+{
+  console.log("You are so close to guess random number")
+}
+else 
+{
+    console.log("Try again!")
+}
+console.log("Random Number is : "+my_random_num)
+console.log("Your Random  Number is : "+user_random)
