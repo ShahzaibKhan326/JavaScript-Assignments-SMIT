@@ -21,7 +21,7 @@
 // var my_day = my_Date.getDay();
 // console.log("Today : "+ days[my_day])
 
-// -------------------Question (3)------------------------------
+// -------------------Question (4)------------------------------
 
 // var days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
 // var my_Date =  new Date();
@@ -34,3 +34,19 @@
 // else {
 //     console.log("it working day")
 // }
+
+
+// -------------------Question (5)------------------------------
+
+var date = new Date();
+var My_Date = date.getDate()
+console.log("Todays Date : "+My_Date);
+if(My_Date <= 15)
+{
+    console.log("First Fiften Days of Month")
+}
+else 
+{
+    console.log("Last Fiften Days of Month")
+
+}
