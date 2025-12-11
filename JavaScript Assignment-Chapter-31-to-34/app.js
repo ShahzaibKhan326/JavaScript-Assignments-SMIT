@@ -90,3 +90,13 @@
 
 // -------------------Question (9)------------------------------
 
+// var Ramdan_date = new Date(2025,2,1)
+// console.log("Ramdan Date : "+Ramdan_date);
+// var current_date = new Date();
+// console.log("Current Date : "+current_date)
+// var diff =  current_date - Ramdan_date;
+// var day = (1000*60*60*24)
+// var days = Math.floor(diff/day)
+// console.log(days + " days have passed since 1st Ramdan,2025")
+
+// -------------------Question (10)------------------------------
