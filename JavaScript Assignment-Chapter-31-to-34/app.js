@@ -123,3 +123,12 @@
 // var year = date.getFullYear();
 // date.setFullYear(year-100)
 // console.log("100 years back, it was : "+ date);
+
+// -------------------Question (13)------------------------------
+
+// var user_birth_year = prompt("Enter your birth year \n Example : 2005");
+// var current_date = new Date();
+// var current_year =  current_date.getFullYear();
+// var current_age = Math.floor(current_year-user_birth_year);
+// console.log("Your birth year is : " + user_birth_year)
+// console.log("Your age is : " + current_age)
