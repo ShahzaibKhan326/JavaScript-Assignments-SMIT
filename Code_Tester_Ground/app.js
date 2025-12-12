@@ -25,17 +25,30 @@
 
 // }
 
-var date = new Date();
-var ms= date.getTime();
-console.log(ms)
+// var date = new Date();
+// var ms= date.getTime();
+// console.log(ms)
 
-var milisec = (1000*1)
-var seconds = (1000*60)
-console.log("seconds : "+seconds)
-var hour = (seconds*60)
-console.log("Hours : "+hour)
-var day = (hour * 24);
-console.log("days : " + day)
+// var milisec = (1000*1)
+// var seconds = (1000*60)
+// console.log("seconds : "+seconds)
+// var hour = (seconds*60)
+// console.log("Hours : "+hour)
+// var day = (hour * 24);
+// console.log("days : " + day)
 
-var mili_to_day = (ms/day)
-console.log(Math.floor(mili_to_day))
+// var mili_to_day = (ms/day)
+// console.log(Math.floor(mili_to_day))
+
+// let d = new Date();
+// console.log(d.toDateString());
+// console.log(d.toTimeString());
+// console.log(d.toLocaleDateString());
+// console.log(d.toLocaleTimeString());
+
+// let d = new Date();
+// let formatted = d.getFullYear() + "-" + (d.getMonth()+1) + "-" + d.getDate();
+// console.log(formatted);
+
+
+

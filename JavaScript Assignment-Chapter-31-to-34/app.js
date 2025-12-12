@@ -100,3 +100,9 @@
 // console.log(days + " days have passed since 1st Ramdan,2025")
 
 // -------------------Question (10)------------------------------
+
+// var date = new Date("2025-9-1")
+// var current_date = new Date();
+// var diff = current_date - date;
+// console.log("On refrence date : " + date )
+// console.log(Math.floor(diff/(1000)) + " seconds had passed")
