@@ -106,3 +106,12 @@
 // var diff = current_date - date;
 // console.log("On refrence date : " + date )
 // console.log(Math.floor(diff/(1000)) + " seconds had passed")
+
+// -------------------Question (11)------------------------------
+
+// var date = new Date();
+// console.log("current date : " + date)
+
+// var hours = date.getHours();
+// date.setHours(hours-1)
+// console.log("1 hour ago, it was : "+date);
