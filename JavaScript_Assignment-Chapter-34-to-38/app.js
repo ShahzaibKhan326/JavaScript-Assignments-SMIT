@@ -105,3 +105,13 @@
 // var ending_num =10;
 // countDown(starting_num,ending_num)
 
+// -------------Question (8)---------------------------------
+
+function num_power(num,power)
+{
+   var result;
+  result= (num**power)   
+}
+
+console.log(num_power(2,2))
+
