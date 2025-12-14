@@ -154,11 +154,23 @@
 
 // -------------Question (10)---------------------------------
 
-function check_palindrome(word)
-{
-  var charArray =  word.split('');
-  var reverseArray = charArray.reverse();
-  var joinedWord = reverseArray.join('');
-  console.log(joinedWord)
-}
-check_palindrome("shahzaib");
+// function check_palindrome(word)
+// {
+//   var charArray =  word.split('');
+//   var reverseArray = charArray.reverse();
+//   var joinedWord = reverseArray.join('');
+
+//   console.log("Your String : "+ word)
+//   console.log("Your String in Reverse : "+joinedWord)
+//   if(word === joinedWord)
+//   {
+//     console.log("Your String is a Palindrome.")
+//   }
+//   else {
+//     console.log("Your String is not a Plaindrome.")
+//   }
+// }
+
+// check_palindrome("new");
+
+// -------------Question (11)---------------------------------
