@@ -133,5 +133,24 @@
 
 // -------------Question (9)---------------------------------
 
+// console.log("Calculating area of rectangle: ");
+// function rectArea(width,height)
+// {
+//    var Area = width*height;
+//    console.log("Width : " + width)
+//    console.log("Height : " + height)
+//    console.log("The area of Rectangle is : " + Area )
+// }
 
+// -----------------(A)-----------------------
+
+// rectArea(4,5);
+
+// -----------------(B)-----------------------
+
+// var height = 4;
+// var width = 5;
+// rectArea(height,width)
+
+// -------------Question (10)---------------------------------
 
