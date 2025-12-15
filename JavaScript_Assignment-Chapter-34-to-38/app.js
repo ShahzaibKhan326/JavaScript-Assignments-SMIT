@@ -210,4 +210,22 @@
 
 // longWord("web development tutorial")
 
+// -------------Question (13)---------------------------------
 
+function wordIndex(str, char)
+{
+     var letters = str.split("");
+     var index = 0;
+     for(var i=0;i < str.length;i++)
+     {
+      var letter = letters[i]  
+      if(letter === char)
+      {
+        index = i;
+        
+      }
+     }
+     console.log(char + " at index " + index)
+}
+
+wordIndex("shahzaib","b")
