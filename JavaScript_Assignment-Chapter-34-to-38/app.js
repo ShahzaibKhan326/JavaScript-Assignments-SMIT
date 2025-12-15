@@ -191,5 +191,23 @@
 
 // cap("the quick brown fox")
 
-// ----------------------
+// -------------Question (12)---------------------------------
+
+// function longWord(str)
+// {
+//   var longestWord ="";
+//   var words = str.split(" ");
+//   for(var i=0;i<words.length;i++)
+//   {
+//       if(words[i].length > longestWord.length )
+//       {
+//         longestWord = words[i];
+//       }
+//   }
+//   console.log("String : "+str)
+//   console.log("Longest is : "+longestWord)
+// }
+
+// longWord("web development tutorial")
+
 
