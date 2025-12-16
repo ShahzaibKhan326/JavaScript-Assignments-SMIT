@@ -233,3 +233,17 @@
 
 // -------------Question (14)---------------------------------
 
+// function circumference(radius)
+// {
+//     return  (2*Math.PI*radius).toFixed(5);
+// }
+
+// console.log("Circumference of circle : "+circumference(10))
+
+// function circleArea(radius)
+// {
+//     return (Math.pow(radius,2)*Math.PI).toFixed(5)
+// }
+
+
+// console.log("Area of Circle : " +circleArea(10))
