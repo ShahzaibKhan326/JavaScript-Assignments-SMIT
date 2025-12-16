@@ -212,20 +212,24 @@
 
 // -------------Question (13)---------------------------------
 
-function wordIndex(str, char)
-{
-     var letters = str.split("");
-     var index = 0;
-     for(var i=0;i < str.length;i++)
-     {
-      var letter = letters[i]  
-      if(letter === char)
-      {
-        index = i;
+// function wordIndex(str, char)
+// {
+//      var letters = str.split("");
+//      var index = -1;
+//      for(var i=0;i < str.length;i++)
+//      {   
+//       if(letters[i] === char)
+//       {
+//         index = i;
+//         break;
         
-      }
-     }
-     console.log(char + " at index " + index)
-}
+//       }
+//      }
+//     console.log(char + " at index " + index)
+// }
 
-wordIndex("shahzaib","b")
+// wordIndex("shah","h")
+
+
+// -------------Question (14)---------------------------------
+
