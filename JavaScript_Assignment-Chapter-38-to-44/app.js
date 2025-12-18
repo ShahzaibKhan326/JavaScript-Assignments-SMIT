@@ -258,3 +258,28 @@
 // }
 
 // noteCount(580)
+
+// -----------------Qustion(9)-----------------------------
+
+// function calculateOvertimePay(hoursWorked) {
+//     const regularLimit = 40;
+//     const overtimeRate = 12.00;
+//     let overtimePay = 0;
+
+//     if (hoursWorked > regularLimit) {
+
+//         let extraHours = hoursWorked - regularLimit;
+//         overtimePay = extraHours * overtimeRate;
+        
+//         console.log("Hours Worked: " + hoursWorked);
+//         console.log("Overtime Hours: " + extraHours);
+//         console.log("Overtime Pay: Rs. " + overtimePay.toFixed(2));
+//     } else {
+//         console.log("Hours Worked: " + hoursWorked);
+//         console.log("No overtime pay earned (worked 40 hours or less).");
+//     }
+
+//     return overtimePay;
+// }
+
+// calculateOvertimePay(45);
