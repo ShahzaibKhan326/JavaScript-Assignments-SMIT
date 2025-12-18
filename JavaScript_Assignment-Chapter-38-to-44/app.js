@@ -233,5 +233,23 @@
 // var km = parseInt(prompt("Enter kilometer for conversion"));
 // main(km)
 
+// -----------------Qustion(9)-----------------------------
 
+
+function noteCount(num)
+{
+    num_length = num.toString().length
+
+    if(num_length<=1 && num < 10  )
+    { 
+        return console.log(num + " coins") 
+    }
+    else if(num<=2 && num<=50)
+    {
+
+    }
+    
+}
+
+ noteCount(6)
 
