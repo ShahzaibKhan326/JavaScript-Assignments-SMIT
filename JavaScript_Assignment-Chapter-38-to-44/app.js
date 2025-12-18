@@ -114,3 +114,31 @@
 // }
 
 // checkIndex("shahzaib","k")
+
+// -----------------Qustion(6)-----------------------------
+
+// function deleteVowels(str)
+// {
+//     var vowels = ["a","i","o","u","e"]
+//     var letters = str.toLowerCase().split("");
+//     var result =[];
+
+//     for(var i = 0; i< letters.length ;i++)
+//     {
+//         var isVowel = false;
+//         for(var j = 0;j<vowels.length;j++)
+//         {
+//             if(letters[i]=== vowels[j])
+//             {
+//                 isVowel=true;
+//                 break;
+//             }
+//         }
+//         if(!isVowel)
+//         {
+//             result.push(letters[i])
+//         }
+//     }
+//     console.log(result.join(""));
+// }
+// deleteVowels("shahzaib");
