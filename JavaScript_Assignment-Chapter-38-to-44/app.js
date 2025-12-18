@@ -35,3 +35,18 @@
 
 // --------Result----------------
 // console.log(leapYear(2000))
+
+// -----------------Qustion(3)-----------------------------
+
+function calcSides(a,b,c)
+{
+    return (a+b+c)/2;
+}
+
+function calcArea(a,b,c)
+{    
+     var s = calcSides(a,b,c);
+     return Math.sqrt(s*(s-a)*(s-b)*(s-c));
+}
+var Area = calcArea(3,2,4).toFixed(5);
+console.log("Area of triangle: "+ Area)
