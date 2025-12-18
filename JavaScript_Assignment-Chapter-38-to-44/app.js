@@ -86,3 +86,31 @@
 // main()
 
 // -----------------Qustion(5)-----------------------------
+
+// function checkIndex(str,c)
+// { 
+//     var found =false;
+//     var index ;
+//   for(var i=0; i < str.length;i++)
+//   {
+//     if(str[i]==c)
+//     {
+//        index = i;
+//        found=true;
+//        break;
+//     }
+//   }
+
+//   if(found)
+//   {
+//     console.log("found at index: " + index)
+//   }
+//   else 
+//   {
+//     console.log(c + " is not found")
+//   }
+
+//   return index;
+// }
+
+// checkIndex("shahzaib","k")
