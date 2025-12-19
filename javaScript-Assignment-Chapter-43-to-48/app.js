@@ -30,3 +30,12 @@ function  undoDelete()
 
 }
 // --------------------------------------------------------------
+
+let count = 0;
+var display = document.getElementById("count");
+
+function  changeCount(amount)
+{
+  count = count + amount;
+  display.textContent = count;
+}
