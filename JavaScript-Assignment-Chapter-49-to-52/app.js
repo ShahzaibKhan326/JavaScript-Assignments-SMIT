@@ -47,3 +47,5 @@ function expandPara()
      }
 }
 
+// ------------------------Edit and delete Table data----------------------------------
+
