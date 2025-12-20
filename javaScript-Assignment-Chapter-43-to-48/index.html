@@ -4,8 +4,81 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chapter (43-To-48)</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+   <div class="container">
+     <h1>Chapter 43-To-48</h1>
+
+   <div class="row">
+
+     <div class="box">
+    <img src="images/S25_main.jpg"
+     onmouseover="this.src='images/S25.jpg'"
+     onmouseout="this.src='images/S25_main.jpg'"
+     >
+     <div class="detail">
+    <p>S25 Ultra</p>
+    <a href="#" onclick="showAlert('Succesfully Added to your cart')">Add to Cart +</a>
+     </div>
+    </div><!--box end-->
+     <div class="box">
+    <img src="images/pixel.jpg" id="pixel"
+     onmouseover="this.src='images/pixel.jpg'"
+     onmouseout="this.src='images/pixel_main.jpg'"
+     >
+     <div class="detail">
+    <p>pixel 10 pro</p>
+    <a href="#" onclick="showAlert('Succesfully Added to your cart')">Add to Cart +</a>
+     </div>
+    </div><!--box end-->
+     <div class="box">
+    <img src="images/iphone.jpg" 
+     onmouseover="this.src='images/iphone.jpg'"
+     onmouseout="this.src='images/iphone_main.jpg'"
+     >
+     <div class="detail">
+    <p>Apple 17 pro </p>
+    <a href="#" onclick="showAlert('Succesfully Added to your cart')">Add to Cart +</a>
+     </div>
+    </div><!--box end-->
+
+   </div><!--Row End-->
+
+   <section  class="student_data_container">
+  
+    <table>
+       <tr>
+        <th>Index</th>
+        <th>Name</th>
+        <th>Class</th>
+        <th><button onclick="undoDelete()" class="std_button">Undo</button></th>
+       </tr>
+       <tr id="data01">
+        <td>0</td>
+        <td>shahzaib</td>
+        <td>8</td>
+        <td><button onclick="removeData('data01')" class="std_button">Delete</button></td>
+       </tr>
+         <tr id="data02">
+        <td>1</td>
+        <td>Hasnain</td>
+        <td>10</td>
+        <td><button onclick="removeData('data02')" class="std_button">Delete</button></td>
+       </tr>
+         <tr id="data03">
+        <td>2</td>
+        <td>Zaid</td>
+        <td>11</td>
+        <td><button onclick="removeData('data03')" class="std_button">Delete</button></td>
+       </tr>
+    </table>
+
+
+   </section>
+
+
+   </div>
    <script src="app.js"></script> 
 </body>
 </html>
