@@ -16,7 +16,7 @@
     font-size: 20px;
 }
 
-form {
+.form-box {
 border: 1px solid red;
 width: 100%;
 display: flex;
@@ -24,12 +24,12 @@ flex-flow: column;
 text-align: center;
 background-color:yellow;
 }
-form h3 {
+.form-box h3 {
     text-align: center;
     margin-bottom: 20px;
     text-transform: capitalize;
     background-color: greenyellow;
-    padding: 5px;
+    padding: 10px 5px;
 }
 input 
 {
@@ -43,11 +43,16 @@ input:focus {
     outline: 1px  solid blue;
     border: none;
 }
-form button 
+.form-box button 
 {
     height: 35px;
     border: none;
     color:white;
     background-color: yellowgreen;
     font-size: 20px;
+    padding: 16px 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
 }

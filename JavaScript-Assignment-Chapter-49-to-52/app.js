@@ -4,9 +4,7 @@ function checkFomData()
 {
     var email = document.getElementById("Email").value;
     var password = document.getElementById("password").value;
-    if(email === "")
-    {
-       var message = "Please Enter valid Password and Email";
-       console.log(message)
-    }
+    var display_box = document.getElementById("display-box");
+ 
+    
 }
