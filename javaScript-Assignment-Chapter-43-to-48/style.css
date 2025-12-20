@@ -62,3 +62,39 @@ table , tr ,td ,th
   padding: 10px 12px;
   width: 100%;
 }
+.counter-box
+{
+ margin-top: 50px;
+width: 190px;
+height: 250px;
+/* border:1px solid red; */
+display: flex;
+flex-flow:column;
+justify-content: space-between;
+align-items: center;
+background-color: green;
+padding:5px;
+}
+
+.counter-display 
+{
+    width: 180px;
+    /* border:1px solid red; */
+    height: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(215, 215, 93);
+}
+.counter-box button {
+    border: none;
+    padding:10px 14px;
+    width: 180px;
+}
+
+.column 
+{
+    display: flex;
+    flex-flow:column;
+    gap:5px;
+}
