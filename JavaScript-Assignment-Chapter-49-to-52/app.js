@@ -48,21 +48,15 @@ function expandPara()
 }
 
 // ------------------------Edit and delete Table data----------------------------------
-
-var userName =  document.getElementById("user-name").value;
-var userClass =  document.getElementById("user-class").value;
-var userRollNumber =  document.getElementById("user-roll-number").value;
-
-var studentData = [];
-function validation(s_name,s_class,s_roll_number)
+var s_name ="4";
+var s_class = 23;
+var s_roll_num = 344355;
+var student_array =  [];
+function addData(user_name,user_class,user_roll_num)
 {
-  var empty = "";
-  if(s_name === empty || s_class === empty || userRollNumber === s_roll_number)
-  {
-    
-  }
-}
-function addData()
-{
-   
+  user_class = s_class;
+  user_name = s_name;
+  user_roll_num = s_roll_num;
+   var tab = document.getElementById("student-table");
+   tab.innerHTML = `<tr> <td>${user_name}</td> <td>${user_class}</td> <td>${user_name}</td></tr>`
 }

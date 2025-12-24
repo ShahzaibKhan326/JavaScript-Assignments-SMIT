@@ -115,7 +115,7 @@ table ,th ,td
 }
 .tableEditer input 
 {
-    width: 50%;
+    width: 56%;
     height: 35px;
 }
 #student-table button 
@@ -133,7 +133,9 @@ table ,th ,td
     padding:10px 40px;
 }
 
-.row-item
+.display-box-button 
 {
-    border: 1px solid  black;
+ /* background-color: red; */
+ display:flex;
+ justify-content: space-around;
 }
