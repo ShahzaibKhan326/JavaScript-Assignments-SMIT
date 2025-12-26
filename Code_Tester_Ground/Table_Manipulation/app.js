@@ -2,12 +2,12 @@
 
 // ---------------------Accessing Table-------------------------------
 
-// ------------(Checking Row in a Table)------------------->
+// ------------(Checking Row in a Table #1.0)------------------->
 
 // const table = document.querySelector("#myTable");
 // console.log(table.rows.length);
 
-// ------------(Adding a Row dynamically)------------------->
+// ------------(Adding a Row dynamically #1.0)------------------->
 
 // function addRow()
 // {
@@ -20,7 +20,7 @@
 //     row.insertCell(3).textContent =""
 // }
 
-// ------------(Adding 3 Rows using loop)--------------------------------
+// ------------(Adding 3 Rows using loop #1.0)--------------------------------
 
 // function addRow()
 // {
@@ -41,7 +41,7 @@
 
 // }
 
-// ------------(Adding rows from input fields)--------------------------------
+// ------------(Adding rows from input fields #1.1)--------------------------------
 
 // function addData()
 // {
@@ -53,3 +53,34 @@
 //   const row = table.insertRow();
 //   row.innerHTML = `<td>${name}</td> <td>${cls}</td> <td>${age}</td>`;
 // }
+
+// -------------(Delete a row using button #1.2)----------------------------------
+
+// function deleteRow(btn)
+// {
+//  btn.closest("tr").remove();
+// }
+
+// -------------(Edit a row  #1.2)----------------------------------
+
+let selectedRow = null;
+
+function editRow(btn)
+{
+  selectedRow = btn.closest("tr");
+
+  document.querySelector("#editName").value = selectedRow.cells[0].textContent;
+  document.querySelector("#editClass").value = selectedRow.cells[1].textContent;
+  document.querySelector("#editAge").value = selectedRow.cells[2].textContent;
+
+}
+
+function updateData()
+{
+  preventDefault();
+  // selectedRow.cells[0].textContent = document.querySelector("#editname").value;
+  selectedRow.cells[0].textContent = document.getElementById("editName").value;
+  selectedRow.cells[1].textContent = document.getElementById("editClass").value;
+  selectedRow.cells[2].textContent = document.getElementById("editAge").value;
+
+}
