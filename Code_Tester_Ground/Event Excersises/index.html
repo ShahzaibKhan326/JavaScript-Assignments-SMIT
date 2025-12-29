@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js Events</title>
+    <style>
+        .container 
+        {
+            display: flex;
+            flex-flow:column;
+            gap:10px;
+        }
+        button 
+        {
+            padding:10px 25px;
+        }
+        input {
+            height: 35px;
+            width: 150px;
+            font-size: 24px;
+            margin:10px 0px;
+        }
+        .myform 
+        {
+            display: flex;
+            flex-flow:column;
+            background-color: antiquewhite;
+            gap:25px;
+            text-align: center;
+            padding:10px;
+
+        }
+        .hidden 
+        {
+            display: none;
+        }
+        #heading 
+        {
+            margin:0px 5px;
+        }
+    </style>
+</head>
+<body>
+
+
+<div class="container">
+
+    <!-- ----------------Events with links---------------------------------- -->
+   
+    <a href="javaScript:void(0)" onclick="alert('hello world!')">show alert</a>
+    <a href="javaScript:void(0)" onclick="popup('hello world!')">show alert function</a>
+
+    <!-- ----------------End----------------------------- -->
+
+    <!-- ----------------Events with buttons---------------------------------- -->
+
+    <button onclick="popup('hello world')">show console message</button>
+    <button onclick="alert('hello world!')">show alert</button>
+
+    <!-- ----------------End----------------------------- -->
+
+    <!-- ----------------Events with mouse---------------------------------- -->
+
+
+    <!-- <img src="https://picsum.photos/200" alt="not found" onmouseover="src='https://picsum.photos/300'" onmouseleave="src='https://picsum.photos/200'"> -->
+
+    <!-- <img src="https://picsum.photos/200" onmouseover="alert('alert message!')"> -->
+
+    <a href="javaScript:void(0)" onmouseover="this.style.color='yellow'" onmouseout="this.style.color='blue'">This is a link</a>
+
+    <!-- ----------------End----------------------------- -->
+
+    <!-- ----------------Events with feilds---------------------------------- -->
+
+    <input type="text" onfocus="this.style.background='yellow'" onblur="this.style.background='gray'">
+    <input type="text" onblur="this.style.background='white'">
+
+    <!-- ----------------Reading Field values---------------------------------- -->
+
+<div class="myform" onsubmit="checkAddress('email')"><!--Start-->
+ <form>
+<label for="email">Email:</label> </br>
+<input type="text" id="email">
+<input type="submit" value="Submit">
+</form>
+</div><!--End-->
+
+    <!-- ----------------Setting  Field values---------------------------------- -->
+
+    <form>
+   ZIP:<br>
+   <input type="text" id="zip" onBlur="fillCity();"><br>
+   City:<br>
+   <input type="text" id="city">
+   </form>
+
+    <!-- ----------------Reading and Setting paragraph text---------------------------------- -->
+
+
+    <!-- <p id="para">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta, magnam 
+        <span id="hidden">
+        atque deserunt nisi eaque officia distinctio sunt pariatur neque saepe, harum blanditiis sequi temporibus reprehenderit iure non unde repellat expedita.
+        </span>
+    </p>
+    <button onclick="showMore()">show More</button> -->
+
+
+    <!-- ----------------Manipulating images and text---------------------------------- -->
+
+      <img src="https://picsum.photos/200" id="hiddenImage" >
+      <button onclick="makeVisible()" >make image visible</button>
+      <button onclick="makeInVisible()" >make image Invisible</button>
+
+
+    <!-- ----------------Swaping Images---------------------------------- -->
+
+
+    <img src="https://picsum.photos/200" id="myimage" onclick="changeImage('myimage','https://picsum.photos/300')">
+
+
+    <div class="box">
+      <h3 style="margin: 0px 10px;" id="heading">Hello world</h3>
+    </div>
+
+    <!-- ----------------target all element by tag name---------------------------------- -->
+
+    <div id="paraContainer">
+
+    <p>Hello world 0</p>
+    <p>Hello world 1</p>
+    <p>Hello world 3</p>
+<div id="box">
+    <p>Inside box 0</p>
+    <p>Insid box 1</p>
+</div>
+
+    </div>
+
+
+</div><!--main container-->
+
+    <script src="app.js">
+    </script>
+</body>
+</html>
