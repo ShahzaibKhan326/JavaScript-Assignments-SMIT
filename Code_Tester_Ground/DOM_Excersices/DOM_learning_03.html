@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Document</title>
+    <title>DOM Learning</title>
 </head>
 <body>
 
@@ -12,6 +12,31 @@
 
 <script>
     // --------Use of querySelector and querySelectorAll-------------------------------
+
+//  -----------------querySelector-(for Selecting Single Element)--------------------
+
+let heading = document.querySelector("#title"); // selecting title  (id)
+let firstPara  = document.querySelector("p");   // selecting first paragraph ("p")
+let para = document.querySelector(".info");     // selecting paragraphs class (".info")
+heading.innerText = "Heading Changed!"
+
+// --------querySelectorAll---(Muiltiple elements)----------------------------
+
+let paragraphs = document.querySelectorAll(".info");
+console.log(paragraphs)
+
+// ---------loop with forEach------------
+
+// paragraphs.forEach(function(p) 
+// {
+//     p.style.color ="red";
+// }
+// )
+
+// ---------Arrow fucntion------------
+
+paragraphs.forEach(p => p.style.color = "blue");
+
 </script>
 
 </body>
