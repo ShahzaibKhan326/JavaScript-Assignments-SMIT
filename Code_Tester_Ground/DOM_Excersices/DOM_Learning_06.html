@@ -4,8 +4,99 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DOM Events</title>
+    <style>
+         .colorBox 
+        {
+            margin: 10px 0px;
+            background-color: aqua;
+            width: 100px;
+            height: 100px;
+            border: 1px solid red;
+        }
+        .container 
+        {
+            width:300px;
+            display: flex;
+            flex-flow:column;
+            gap:10px;
+        }
+    </style>
 </head>
 <body>
     
+
+  <div class="container">
+
+
+ <h1 id="title">DOM Day 6</h1>
+
+    <p class="text">Paragraph One</p>
+    <p class="text">Paragraph Two</p>
+
+    <button id="btn">Change Style</button>
+
+    <div class="colorBox">
+
+    </div>
+    <button id="color_btn">Random Color</button>
+
+    <input type="text" id="nameInput" placeholder="Type your name">
+    <p id="output"></p>
+
+
+    <!-- <button id = "btn-01">Click me!</button> -->
+    
+
+
+  </div>
+    
+  <script>
+
+//   --------------------Click Event (Modern way)---------------------------------
+
+// let btn = document.querySelector("#btn-01");
+// btn.addEventListener("click", function()
+// {
+//     console.log("Button Clicked!")
+// }
+// )
+
+//   --------------------Using Click Event (Modern way)---------------------------------
+
+let btn = document.querySelector("#color_btn");
+const display = document.querySelector(".colorBox")
+let color_array = ["red","green","yellow","blue","orange","purple","pink"]
+
+btn.addEventListener("click", () => 
+{
+    let index = Math.floor(Math.random() * color_array.length);
+    display.style.backgroundColor = color_array[index]
+})
+
+//   --------------------Mouse Event---------------------------------
+
+display.addEventListener("mouseover", ()=>
+{
+    display.style.border  = "5px solid black";
+})
+display.addEventListener("mouseout", ()=>
+{
+    display.style.border  = "none";
+})
+
+//   --------------------Input Event---------------------------------
+
+const input = document.querySelector("#nameInput");
+const output = document.querySelector("#output");
+
+input.addEventListener("input", ()=> 
+{
+    output.innerHTML = input.value;
+}
+)
+
+// ---------------------------
+
+  </script>
 </body>
 </html>
