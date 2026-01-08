@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom Learning </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- --------(#1.0)----------- -->
+
+    <input type="text" id="nameInput" placeholder="Enter your name">
+    <p id="output"></p>
+
+    <!-- --------(#2.0--#3.0)----------- -->
+
+    <input type="text" id="city">
+    <button id="btn">Submit</button>
+    <p id="result"></p>
+
+    <!-- --------(#4.0)----------- -->
+
+    <input type="text"  id="num">
+    <p id="square"></p>
+
+    <!-- --------(#5.0)----------- -->
+
+    <form id="myForm">
+    <input type="text" id="username">
+    <button type="submit">Submit</button>
+    </form>
+    <p id="msg"></p>
+
+
+    <script>
+// ---------------Read Input Value---(#1.0)------------------------
+
+//    var input = document.querySelector("#nameInput");
+//    var output = document.querySelector("#output");
+
+//    input.addEventListener("input" , ()=> {
+//     output.innerHTML = input.value;
+//    })
+
+// ---------------Button + Input---(#2.0)------------------------
+
+//    var input = document.querySelector("#city");
+//    var result = document.querySelector("#result")
+//    var btn = document.querySelector("#btn")
+
+//    btn.addEventListener("click" , ()=> {
+//     result.innerHTML = input.value;
+//    })
+
+// ---------------Empty Input check ---(#3.0)------------------------
+
+//    var input = document.querySelector("#city");
+//    var result = document.querySelector("#result")
+//    var btn = document.querySelector("#btn")
+
+//    btn.addEventListener("click" , ()=> {
+//     if(input.value === "")
+//    {
+//     alert("Input cannot be empty");
+//    }
+//    else
+//    {
+//     result.innerHTML = input.value;
+//    }
+//    })
+
+// ---------------Number Input Example ---(#4.0)------------------------
+
+// var num = document.querySelector("#num")
+// var square = document.querySelector("#square")
+
+// num.addEventListener("input" , ()=> {
+//     square.innerText = num.value * num.value;
+// })
+
+// ---------------Form Submit Event  ---(#5.0)------------------------
+
+// var form = document.querySelector("#myForm");
+// var msg = document.querySelector("#msg");
+// form.addEventListener("submit", (event)=> {
+//     event.preventDefault();
+//     msg.innerText = "Form Submitted"
+// })
+
+// -------End-------------
+    </script>
+</body>
+</html>
