@@ -20,14 +20,11 @@
 
     <script>
 
-// ----------Practice------------------->
-
-// var container = document.querySelector(".container");
-// container.style.backgroundColor = "red";
-// var firstChild = container.children[0].style.fontSize = "35px";
-// var secondChild = container.children[1];
-// secondChild.previousElementSibling.style.color = "green";
-// secondChild.nextElementSibling.style.fontWeight = "bold"
+document.querySelectorAll(".item").forEach(item => {
+  item.addEventListener("click", () => {
+    item.parentElement.style.border = "2px solid black";
+  });
+});
 
 
 // ----------Parent Element------------------->
