@@ -9,6 +9,10 @@
         img {
             width: 100px;
         }
+        .change-color {
+            color:white;
+            background-color:green ;
+        }
     </style>
 </head>
 <body>
@@ -18,39 +22,88 @@
     <img src="Images/js_logo.png" alt="logo"> <br>
     <input type="text" placeholder="Enter name">
 
-    <button id="btn" onclick="alert('I am active')">Click Me!</button>
+    <button id="btn" onclick="alert('I am active')" >Click Me!</button>
 
     <script>
 
-// -----------Getting Attribute------------------------------>
+// // -----------Getting Attribute------------------------------>
 
-    const img = document.querySelector("img")
-    console.log("Image Src Before: "+img.getAttribute("src"))
+//     const img = document.querySelector("img")
+//     console.log("Image Src Before: "+img.getAttribute("src"))
 
-// -----------Set Attribute------------------------------>
+// // -----------Set Attribute------------------------------>
 
-img.setAttribute("src" , "Images/js_logo_advance.png")
-img.setAttribute("alt", "New Image");
+// img.setAttribute("src" , "Images/js_logo_advance.png")
+// img.setAttribute("alt", "New Image");
 
-console.log("Image Src After: "+img.getAttribute("src"));
+// console.log("Image Src After: "+img.getAttribute("src"));
 
-// -----------Remove Attribute------------------------------>
+// // -----------Remove Attribute------------------------------>
 
-console.log("Alt Attribute Before: "+img.getAttribute("alt"))
+// console.log("Alt Attribute Before: "+img.getAttribute("alt"))
 
-img.removeAttribute("alt");
+// img.removeAttribute("alt");
 
-console.log("Alt Attribute After: "+img.getAttribute("alt"))
+// console.log("Alt Attribute After: "+img.getAttribute("alt"))
 
-// -----------Disable Button----------------------------->
+// // -----------Disable Button----------------------------->
+
+// let btn = document.querySelector("#btn");
+// btn.setAttribute("disabled",true)
+// console.log(btn.getAttribute("disabled"))
+
+// // -----------Enable Button----------------------------->
+
+// // btn.removeAttribute("disabled")
+
+// // ------------ClassList---------------------------->
+
+// btn.classList.add("active")
+// btn.classList.remove("active")
+// btn.classList.toggle("active")
+
+// // ------------Checking Attribute / Class---------------------------->
+
+
+// if(btn.hasAttribute("disabled"))
+// {
+//     console.log("Button disable");
+// }
+
+// if(btn.classList.contains("active"))
+// {
+//     console.log("active");
+// }
+
+// ---------Practice-------------->
+
+let img = document.querySelector("img");
+console.log(img)
+img.addEventListener("click" ,() =>{
+img.setAttribute("src","Images/js_logo_advance.png")
+})
 
 let btn = document.querySelector("#btn");
-btn.setAttribute("disabled",true)
-console.log(btn.getAttribute("disabled"))
+console.log(btn)
+// btn.addEventListener("click",()=>
+// {
+//     btn.setAttribute("disabled",true)
+// })
 
-// -----------Enable Button----------------------------->
+btn.addEventListener("click",()=>
+{
+    // btn.classList.add("change-color")
+     btn.classList.toggle("change-color");
 
-// btn.removeAttribute("disabled")
+     if(btn.classList.contains("change-color"))
+{
+    console.log("Color Changed!")
+}
+else {
+    console.log("Ready to Change the button color")
+}
+
+})
 
 
 
