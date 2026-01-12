@@ -4,12 +4,92 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DOM Learning Day 12</title>
+    <link rel="stylesheet" href="../DefaultCss/default.css">
+    <style>
+        .green 
+        {
+            background: green;
+            color:white;
+            padding:10px;
+        }
+    </style>
 </head>
 <body>
     <h1>Event Delegation</h1>
 
+<!-- <ul id="list">
+  <li>Item 1</li>
+  <li>Item 2</li>
+  <li>Item 3</li>
+  <li>Item 4</li>
+  <li>Item 5</li>
+</ul>
+<button id="add">Add</button> -->
+
+<ul id="mylist">
+<li>List Item</li>
+</ul>
+<button id="btn">Add</button>
+
+
     <script>
 
+// const list = document.querySelector("#list");
+
+// -------------------------------->
+
+// list.addEventListener("click", (event) => {
+//     if(event.target.tagName === "LI")
+// {
+//     event.target.remove();
+// }
+// })
+
+// -------------------------------->
+
+// list.addEventListener("click", (e) => {
+//   console.log("target:", e.target);
+//   console.log("currentTarget:", e.currentTarget);
+// });
+
+// -------------------------------->
+
+// const btn = document.querySelector("#add");
+
+// btn.addEventListener("click", () => {
+//   const li = document.createElement("li");
+//   li.textContent = "New Item";
+//   list.appendChild(li);
+// });
+
+// --------Practice-------->
+
+const list = document.querySelector("#mylist");
+const btn = document.querySelector("#btn")
+
+btn.addEventListener("click" , ()=> {
+const li = document.createElement("li");
+li.textContent = "New list item" ;
+list.appendChild(li);
+})
+
+list.addEventListener("click", (e) => 
+{
+    if(e.target.tagName === "LI")
+{
+    // e.target.remove();
+    e.target.classList.toggle("green")
+
+    console.log(e.target)
+    console.log(e.currentTarget)
+}
+})
+
+window.addEventListener("keydown", (e) => {
+  if (e.key === "Delete") {
+    document.querySelector(".green")?.remove();
+  }
+});
 
 
     </script>
