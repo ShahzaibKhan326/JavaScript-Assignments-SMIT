@@ -4,12 +4,82 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Creating & Removing Elements</title>
+
+    <style>
+
+.font-size {
+    font-size: 24px;
+}
+
+    </style>
+
 </head>
 <body>
+  <div class="container">
+
     <h1>DAY 10 of DOM Learning </h1>
+    <h3>Creating & Removing Elements</h3>
     
+    <div id="list">
+
+    </div>
+
+  </div>
     <script>
-        
+
+// ----(Step 01)--->-----(Create an Element)-------------------------->
+
+const newPara = document.createElement("p");
+newPara.innerHTML = "I am a new paragraph (#01).";
+
+// ----(Step 02)--->-----(Add (Append) to to Page)-------------------------->
+
+document.body.appendChild(newPara);
+
+// ------------------Append at Specific Parent----------------------------->
+
+let container = document.querySelector(".container");
+
+let secondPara = document.createElement("p");
+secondPara.innerHTML = "<b>This is paragraph with bold style (#02). </b>"
+
+container.appendChild(secondPara)
+
+// ------------------Add Class/Style----------------------------->
+
+newPara.classList.add("font-size")
+newPara.style.color = "green";
+
+// ------------------Remove an Element----------------------------->
+
+// secondPara.remove();
+
+// ------------------Creating Muilitple Elements (Loop)----------------------------->
+
+const list = document.querySelector("#list")
+
+for(let i = 1 ; i <=3 ; i++ )
+{
+    const li = document.createElement("li");
+    li.innerHTML = "item" + " " +  i;
+    li.classList.add("item")
+    list.appendChild(li);
+}
+
+// ------------------Remove on Click ----------------------------->
+
+const items = document.querySelectorAll(".item")
+
+items.forEach( item => {
+    item.addEventListener("click", ()=>
+{
+    item.remove();
+})
+})
+
+
+
+
     </script>
 </body>
 </html>
