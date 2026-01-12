@@ -77,41 +77,6 @@
 // })
 // })
 
-
-// --------Practice Time--------->
-
-let container = document.querySelector(".container");
-
-
-let p = document.createElement("p");
-p.textContent = "Hello World!"
-container.appendChild(p);
-
-let newPara = document.createElement("p");
-newPara.textContent = "Second Para";
-container.appendChild(newPara);
-
-let paraList = container.querySelectorAll("p");
-console.log(paraList)
-
-paraList.forEach(para => 
-    {
-        para.addEventListener("click", ()=>
-    {
-        para.remove();
-    })
-    }
-)
-
-let list = document.querySelector("#list")
-
-for(let i = 1; i <= 3; i++)
-{
-    let li = document.createElement("li");
-    li.textContent = "item " + i ;
-    list.appendChild(li);
-}
-
     </script>
 </body>
 </html>

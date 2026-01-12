@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Learning Day 11</title>
+    <link rel="stylesheet" href="../DefaultCss/default.css">
+    <style>
+        img {
+            width: 100px;
+        }
+    </style>
+</head>
+<body>
+    
+    <h1>DOM Attributes & classList</h1>
+
+    <img src="Images/js_logo.png" alt="logo"> <br>
+    <input type="text" placeholder="Enter name">
+
+    <button id="btn" onclick="alert('I am active')">Click Me!</button>
+
+    <script>
+
+// -----------Getting Attribute------------------------------>
+
+    const img = document.querySelector("img")
+    console.log("Image Src Before: "+img.getAttribute("src"))
+
+// -----------Set Attribute------------------------------>
+
+img.setAttribute("src" , "Images/js_logo_advance.png")
+img.setAttribute("alt", "New Image");
+
+console.log("Image Src After: "+img.getAttribute("src"));
+
+// -----------Remove Attribute------------------------------>
+
+console.log("Alt Attribute Before: "+img.getAttribute("alt"))
+
+img.removeAttribute("alt");
+
+console.log("Alt Attribute After: "+img.getAttribute("alt"))
+
+// -----------Disable Button----------------------------->
+
+let btn = document.querySelector("#btn");
+btn.setAttribute("disabled",true)
+console.log(btn.getAttribute("disabled"))
+
+// -----------Enable Button----------------------------->
+
+// btn.removeAttribute("disabled")
+
+
+
+    </script>
+
+</body>
+</html>
