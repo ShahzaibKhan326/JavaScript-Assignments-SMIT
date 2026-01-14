@@ -1,0 +1,40 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding:0px;
+}
+
+.completed
+{
+    text-decoration: line-through;
+    color:gray;
+}
+
+.delete {
+  color: red;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+ul 
+{
+    width: 300px;
+    padding:10px 5px;
+}
+li {
+    padding:10px 5px;
+    font-size: 18px;
+}
+
+input
+{
+    height: 25px;
+}
+button {
+    /* width: 50px; */
+    padding:10px 16px;
+    text-align:center;
+    border:none;
+    background-color: aqua;
+}
