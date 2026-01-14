@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Storage Learning</title>
+</head>
+<body>
+    <h3>Local Storage Learning</h3>
+
+    <script>
+
+// --------Set and Get Item ---------------
+
+       /*Local Storage stores "ONLY STRING"*/
+
+//   localStorage.setItem("name","khan");
+//   const userName = localStorage.getItem("name");
+//   console.log(`Hello ${userName} !`)
+
+// ---------------------------->
+
+// --------Save Object ---------------
+
+const user = {name : "Ali", age : 12};
+localStorage.setItem("user", JSON.stringify(user));
+
+// --------Read Object ---------------
+
+const data = JSON.parse(localStorage.getItem("user"));
+console.log(data.name);
+
+// ---------------------------->
+
+// --------Save Array ---------------
+
+const greeting = ["welcome", "how are you"]
+localStorage.setItem("greeting",JSON.stringify(greeting));
+
+// --------Read Array ---------------
+
+const savedGreeting = JSON.parse(localStorage.getItem("greeting") || [])
+console.log(savedGreeting);
+
+    </script>
+</body>
+</html>

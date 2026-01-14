@@ -28,6 +28,11 @@ input.addEventListener("keydown",  (e)=>
     {
         addTask();
     }
+
+    if(e.key === "+")
+    {
+        e.target.style.fontSize = "20px";
+    }
 }
 )
 
