@@ -1,0 +1,30 @@
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+body 
+{
+    background-color: #111;
+}
+
+.game 
+{
+    width: 800px;
+    height: 400px;
+    background-color: #222;
+    margin: 50px auto;
+    position: relative;
+    overflow: hidden;
+    border:3px solid white;
+}
+
+#player 
+{
+    width: 40px;
+    height: 40px;
+    background:lime;
+    position: absolute;
+    bottom : 0;
+    left: 100px;
+}
