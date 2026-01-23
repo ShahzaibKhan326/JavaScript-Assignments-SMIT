@@ -2,17 +2,25 @@ const player = document.querySelector("#player")
 
 let playerX = 100;
 let speed = 5;
+const  keys = {};
 
-document.addEventListener("keydown", (e)=> 
+document.addEventListener("keydown", e =>  keys[e.key] = true)
+document.addEventListener("keyup", e =>  keys[e.key] = false)
+
+function gameLoop()
 {
-    if(e.key === "ArrowRight")
+    if(keys["ArrowRight"])
     {
         playerX += speed;
     }
-    if(e.key === "ArrowLeft")
+    if(keys["ArrowLeft"])
     {
         playerX -= speed;
     }
 
     player.style.left = playerX+"px";
-})
+
+    requestAnimationFrame(gameLoop);
+}
+
+gameLoop()
