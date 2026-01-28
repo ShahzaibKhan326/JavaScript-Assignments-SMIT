@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Nodes</title>
+</head>
+<body>
+    
+    <div id = "box">
+        <p id="par">First Child</p>
+        <p>Second Child</p>
+    </div>
+
+    <ul id="list">
+        <li>apple</li>
+        <li>banana</li>
+    </ul>
+
+    <div>
+        <li id="one">One</li>
+        <li id="two">two</li>
+        <li id="three">three</li>
+    </div>
+
+    <script>
+        // ----checking Node values-------->
+        let para = document.getElementById("par");
+        console.log(para.nodeName)
+        console.log(para.nodeType)
+        console.log(para.nodeValue)
+
+        // -----ParentNode---->
+      
+       console.log(para.parentNode)
+
+      // ------ParentElement---------->
+      console.log(para.parentElement)
+      para.parentElement.style.border = "2px solid red";
+
+    //   ---------ChildNodes------------->
+
+    let box = document.getElementById("box");
+    // ------------>
+    console.log(box.childNodes)
+
+    // ------Children----->
+    console.log(box.children)
+
+    // -----firstChild------->
+
+    console.log(box.firstChild)
+
+    // -----firstElementChild--------->
+
+    console.log(box.firstElementChild)
+
+    // --------Practice-01------>
+
+    let list = document.getElementById("list");
+
+    console.log(list.childNodes.length) //5
+    console.log(list.children.length)  //2
+
+    // ------Practice 02--------->
+
+    for(let item of list.children)
+    {
+        item.style.color = "green"
+    }
+
+    // -----nextElementSibling------------->
+    // -----previousElementSibling------------->
+
+    let fristPara = document.getElementById("one");
+    let thirdPara = document.getElementById("three")
+
+    console.log(fristPara.nextElementSibling)
+    console.log(thirdPara.previousElementSibling)
+
+
+
+    
+
+
+
+
+        
+    </script>
+</body>
+</html>
