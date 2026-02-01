@@ -1,13 +1,61 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Objects</title>
-</head>
-<body>
+  </head>
+  <body>
+    <!-- <h2>Student Info</h2>
+
+    <p>Name: <span id="name"></span></p>
+    <p>Age: <span id="age"></span></p>
+    <p>Course: <span id="course"></span></p>
+    <p>City: <span id="city"></span></p> -->
+
+    <p>Name : <span id="name"></span></p>
+    <p>Brand : <span id="brand"></span></p>
+    <p>Price : <span id="price"></span></p>
+    
+
+    <div id="output">
+
+    </div>
     <script>
-        
+      let student = {
+        name: "Shahzaib Khan",
+        age: 20,
+        course: "JavaScript",
+        city: "Karachi",
+      };
+ 
+
+    //   -----Showing Data----------->
+
+    //   document.getElementById("name").innerText = student.name;
+    //   document.getElementById("age").innerText = student.age;
+    //   document.getElementById("course").innerText = student.course;
+    //   document.getElementById("city").innerText = student.city;
+
+    //  ---Showing Data using loop----------------->
+
+    // let output = ""
+    // for(let key in student)
+    // {
+    //     output+= `<p>${key}: ${student[key]}</p>`
+    // }
+    // document.getElementById("output").innerHTML = output;
+
+    // ---------Practice----------->
+
+    // let prodcut = {
+    //     name:"Car",price:300,brand:"China"
+    // }
+
+    //  document.getElementById("name").innerHTML = `${prodcut.name}`
+    //  document.getElementById("brand").innerHTML = `${prodcut.brand}`
+    //  document.getElementById("price").innerHTML = `${prodcut.price}`
+
     </script>
-</body>
+  </body>
 </html>
