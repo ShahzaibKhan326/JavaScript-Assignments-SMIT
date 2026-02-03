@@ -1,19 +1,105 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ForEach Practice Sheet</title>
-</head>
-<body>
+  </head>
+  <body>
     <script>
-        // Array => Pring all numbers
-        const numbers = [1, 2, 3, 4, 5];
+      // // Array => Pring all numbers ------>
+      // const numbers = [1, 2, 3, 4, 5];
 
-        numbers.forEach(num => {
-            console.log(num)
-        });
+      // numbers.forEach(num => {
+      //     console.log(num)
+      // });
 
+      // // Array => Print even numbers only----->
+      // const numbers = [10, 15, 20, 25, 30];
+
+      // numbers.forEach(num =>
+      //     {
+      //         if(num%2===0)
+      //     {
+      //         console.log(num)
+      //     }
+      //     }
+      // )
+
+      // Object => Print only string values--->
+      //   const person = {
+      //     name: "Alice",
+      //     age: 25,
+      //     city: "London",
+      //     married: false,
+      //   };
+
+      //   Object.entries(person).forEach(([key , value]) => {
+      //     if(typeof value === "string")
+      //   {
+      //     console.log(`${key} : ${value}`)
+      //   }
+      //   })
+
+      // Array of Objects => Print names with age < 30-->
+      //   const users = [
+      //     { name: "Alice", age: 25 },
+      //     { name: "Bob", age: 30 },
+      //     { name: "Charlie", age: 18 },
+      //   ];
+
+      //   users.forEach(user => {
+      //     if(user.age < 30)
+      //   {
+      //     console.log(user.name)
+      //   }
+      //   })
+
+      // Nested Arrays => Print number > 50-->
+      //   const scores = [
+      //     [45, 60, 70],
+      //     [30, 55, 90],
+      //     [80, 40, 20],
+      //   ];
+      //   scores.forEach(score =>
+      // {
+      //     score.forEach(num =>
+      //         {
+      //             if(num > 50)
+      //         {console.log(num)}
+      //         }
+      //     )
+      // }
+      //   )
+
+      // Array of Object => Product with tag "tech"-->
+      //   const products = [
+      //     { name: "Phone", tags: ["tech", "mobile"] },
+      //     { name: "Chair", tags: ["furniture"] },
+      //     { name: "Laptop", tags: ["tech", "computer"] },
+      //   ];
+
+      //   products.forEach(prd => {
+      //     if(prd.tags.includes("tech"))
+      //   {
+      //     console.log(prd.name)
+      //   }
+      //   })
+
+      // Array of Object - Total price if quantity > 2-->
+      const orders = [
+        { product: "Phone", price: 100, quantity: 3 },
+        { product: "Mouse", price: 25, quantity: 1 },
+        { product: "Keyboard", price: 75, quantity: 5 },
+      ];
+
+      orders.forEach(order => {
+        if(order.quantity > 2)
+      {
+        let total = order.quantity * order.price;
+        console.log(`${order.product} total price is $${total}`)
+      }
+      })
     </script>
-</body>
+  </body>
 </html>
