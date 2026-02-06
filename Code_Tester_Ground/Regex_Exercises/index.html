@@ -1,19 +1,116 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Regex Learning</title>
-</head>
-<body>
-
+  </head>
+  <body>
     <script>
+      //   let regex = /hello/;
+      //   let regex = new RegExp("hello")
 
-   //Regex Anotomy
-   // A Regex has 3 main parts
-   //     /pattern/flag
-   //     /hello/i
-   
+      // let regex = /hello/
+      // console.log(regex.test("hello world"));
+      // console.log(regex.test("hi world"));
+
+      // console.log(/hello/.test("Hello"))
+      // i ==> Remove case Sensitive
+      // console.log(/hello/i.test("Hello"))
+
+      // let nameRegex = /Ali/i
+      // let validName = nameRegex.test("ali") ? "valid Name" : "unvalid Name"
+      // console.log(validName)
+
+      //  . (dot) ==> Match Any Single Character
+
+      // console.log(/h.t/.test("hat"))
+      // console.log(/h.t/.test("hit"))
+      // console.log(/h.t/.test("hot"))
+
+      // \d ==> Match Numbers
+      // console.log(/\d/.test("abc1"))
+      // console.log(/\d/.test("abc"))
+      // // Match muiltiple digits:
+      // console.log(/\d\d/.test("12"))
+
+      // \w ==> Match Letters \ Numbers \ underscore
+      // console.log(/\w/.test("@"))
+      // console.log(/\w/.test("A"))
+      // console.log(/\w/.test("1"))
+
+      // \s ==> Match Spaces
+      // console.log(/\s/.test("hello world"))
+      // console.log(/\s/.test("helloworld"))
+
+      // ---Pracitce---->
+
+      // checking if string contains a number-->
+    //   let text = "User123";
+    //   let haveNumber = /\d/
+    //   let haveSpace  = /\s/
+    //   let haveWordJS = /js/i
+    //   console.log(haveNumber.test(text))
+    //   console.log(haveSpace.test(text))
+    //   console.log(haveWordJS.test(text))
+
+    // .match() ==> Get the Match
+    // let text = "I love JS"
+    // let result = text.match(/JS/);
+    // console.log(result)
+    // Returns ==>
+    // matched value / index / input string
+
+
+    // ---Pracice Tasks-->
+
+    // Contain a Number?-->
+    // let str = "User2026"
+    // let result = /\d/.test(str)
+    // console.log(result)
+
+    // No Number?-->
+    // let str = "Username";
+    // let result = !(/\d/.test(str))
+    // console.log(result)
+
+    // Case-Insensitive Match?
+    // let str = "I love JavaScript";
+    // let result = /Js/i.test(str)
+    // console.log(result)
+
+    // Contains Space?
+    // let str = "Hello World";
+    // let result = /\s/.test(str)
+    // console.log(result)
+
+    // Any Character Between h_t
+    // let str = "hat";
+    // let result = /h.t/.test(str)
+    // console.log(result)
+
+    // Match Letter or Number
+    // let str = "@@@1@@";
+    // let result = /\w/.test(str)
+    // console.log(result)
+
+    // Extract a Number
+    let str = "Order ID: 45";
+    let result = str.match(/\d/)
+    console.log(result)
+
+    // Boolean Validation
+    // function hasSpace(text)
+    // {
+    //     let result = /\s/.test(text)
+    //     return result
+    // }
+
+    // let result = hasSpace("hello world")
+    // console.log(result)
+
+
+
     </script>
-</body>
+  </body>
 </html>

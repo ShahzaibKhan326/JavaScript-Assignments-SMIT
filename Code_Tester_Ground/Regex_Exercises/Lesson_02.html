@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lesson 2</title>
+  </head>
+  <body>
+    <h2>Lesson 2: Character Set ,Ranges & Quantifiers</h2>
+    <script>
+      // characterSet []
+      // Match One character from many options-->
+      // console.log(/[abc]/.test("apple"));
+      // console.log(/[abc]/.test("dog"))
+
+      // Ranger [a-z] [A-Z] [0-9]
+      // console.log(/[a-z]/.test("hello"))
+      // console.log(/[A-Z]/.test("hello"))
+      // console.log(/[0-9]/.test("abc1"))
+
+      // Combine -->
+      // console.log(/[a-zA-Z]/.test("9"))
+      // console.log(/[a-zA-Z]/.test("A"))
+
+      // NegatedSet [^]
+      // Match anything except inside brackets-->
+      // console.log(/[^0-9]/.test("123"))
+      // console.log(/[^0-9]/.test("123a"))
+
+      //   ------Quantifiers------->
+
+      // Quantifier + (One or More)
+      // console.log(/\d+/.test("123"))
+      // console.log(/\d+/.test("abc"))
+      // Extract:
+      // let result = "order 456".match(/\d+/)
+      // console.log(result)
+
+      //   Quantifier * (Zero and More)
+      // console.log(/abc*/.test("a"))
+      // console.log(/abc*/.test("abb"))
+      // * can match nothing
+
+      //   Quantifier ? (Zero or One)
+      // console.log(/colou?r/.test("color"));
+      // console.log(/colou?r/.test("colour"));
+
+      // Exact Count {}
+      // console.log(/\d{4}/.test("2026"))
+      // console.log(/\d{4}/.test("20"))
+      // Range:
+      // console.log(/\d{2,4}/.test("123"));
+
+      // Anchors ^ and $
+      // control start and end
+      // console.log(/^hello/.test("hello world"));
+      // console.log(/hello$/.test("say hello"));
+      // Exact Match:
+      // console.log(/^hello$/.test("hello"))
+
+      // Example:
+      // Rule: only letters & numbers /  min 3 , max 10 character
+      // let usernameRegex = /^[a-zA-z0-9]{3,10}$/;
+      // console.log(usernameRegex.test("user123"))
+      // console.log(usernameRegex.test("us"))
+      // console.log(usernameRegex.test("user@"))
+
+    //   ----------Practice Task---------->
+
+    // let str = "hello"
+    // console.log(/^[a-z]+$/.test(str))
+
+    // let str = "ID: 45 and code 789"
+    // console.log(str.match(/\d+/g))  
+
+    // console.log(/^\d{4}$/.test("1235"))
+
+    // let str = "JS-javaScript-Js"
+    // console.log(/^JS/.test(str))
+
+    // console.log(/^[a-zA-Z]{5,8}$/.test("summerend"))
+
+    // console.log(/^\w{4,12}$/.test("some_thing"))
+
+
+    </script>
+  </body>
+</html>
