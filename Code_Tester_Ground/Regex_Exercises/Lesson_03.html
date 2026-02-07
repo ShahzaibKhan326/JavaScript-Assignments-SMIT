@@ -1,58 +1,77 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Lesson_3</title>
-</head>
-<body>
+  </head>
+  <body>
     <h2>Lesson 3: Groups , OR , Flags & Replace</h2>
     <script>
-        // Group ()- Capture Parts of Text
-        // let str = "Phone: 123-456"
-        // let result = str.match(/(\d{3})-(\d{3})/);
-        // console.log(result)
+      // Group ()- Capture Parts of Text
+      // let str = "Phone: 123-456"
+      // let result = str.match(/(\d{3})-(\d{3})/);
+      // console.log(result)
 
-        // OR Operator |
-        // Match one pattern OR another
-        // console.log(/cat|dog/.test("I have a dog"))
-        // console.log(/(cat|dog)/.test("cat"))
+      // OR Operator |
+      // Match one pattern OR another
+      // console.log(/cat|dog/.test("I have a dog"))
+      // console.log(/(cat|dog)/.test("cat"))
 
-        // Non-Capturing Groups (?: )
-        // when you don't need captured data-->
-        // console.log(/(?:Mr|Mrs|Ms)\.?\s[A-Z][a-z]+/.test("Khan"))
+      // Non-Capturing Groups (?: )
+      // when you don't need captured data-->
+      // console.log(/(?:Mr|Mrs|Ms)\.?\s[A-Z][a-z]+/.test("Khan"))
 
-        // Flags 
-        // g  ==> Global (all matches)
-        // i  ==> Case-insensitive
-        // m  ==> Multiline
-        // Example:
-        // console.log("JS js Js".match(/js/gi))
+      // Flags
+      // g  ==> Global (all matches)
+      // i  ==> Case-insensitive
+      // m  ==> Multiline
+      // Example:
+      // console.log("JS js Js".match(/js/gi))
 
-        // .replace() with Regex:
+      // .replace() with Regex:
 
-        // Replace first match-->
-        // let str = "I love JS";
-        // console.log(str.replace(/JS/,"JavaScript"))
+      // Replace first match-->
+      // let str = "I love JS";
+      // console.log(str.replace(/JS/,"JavaScript"))
 
-        // Replace All:-->
-        // let str = "Js is easy. Js is fun."
-        // console.log(str.replace(/Js/g,"JavaScript"))
+      // Replace All:-->
+      // let str = "Js is easy. Js is fun."
+      // console.log(str.replace(/Js/g,"JavaScript"))
 
-        // Replace Using Groups $1 $2
-        // let str = "2026-02-06"
-        // console.log(str.replace(/(\d{4})-(\d{2})-(\d{2})/,"$3/$2/$1"))
+      // Replace Using Groups $1 $2
+      // let str = "2026-02-06"
+      // console.log(str.replace(/(\d{4})-(\d{2})-(\d{2})/,"$3/$2/$1"))
 
-        // Remove extra spaces
-        // let str = "   hello     world    "
-        // let clean = str.replace(/\s+/g," ").trim()
-        // console.log(clean)
+      // Remove extra spaces
+      // let str = "   hello     world    "
+      // let clean = str.replace(/\s+/g," ").trim()
+      // console.log(clean)
 
-        //Validate Muiltiple Words (OR + Anchors)
-        // console.log(/^(yes|no|maybe)$/i.test("yes"))
+      //Validate Muiltiple Words (OR + Anchors)
+      // console.log(/^(yes|no|maybe)$/i.test("yes"))
 
+      // -------Practice Task------>
 
+      // Extract area code from phone Number-->
+      // let str = "Contact: 0301-9876543"
+      // console.log(str.match(/\d{4}/))
 
+      // check if string contains => html OR css OR js
+      // let str = "style.css";
+      // console.log(/(html|css|js)$/i.test(str))
+
+      // Replace all numbers with #-->
+      // let str ="Order 123, price 500";
+      // console.log(str.replace(/\d/g,"#"))
+
+      // Swap first & last name-->
+      //   let str = "Shahzaib Khan";
+      //   console.log(str.replace(/(\w+)\s(\w+)/,"$2 $1") )
+
+      //   Format Date:
+      // let str = "06-02-2026";
+      // console.log(str.replace(/(\d{2})-(\d{2})-(\d{4})/,"$3/$2/$1"))
     </script>
-</body>
+  </body>
 </html>
