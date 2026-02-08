@@ -1,14 +1,61 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Lesson_04</title>
-</head>
-<body>
+  </head>
+  <body>
     <h2>Lookaheads, Validation Pattern & Real-World Forms</h2>
     <script>
-        
+      // Lookahead check a condition consuming characters
+
+      // Positive Lookahed (?=)
+      // Match this only if someting follows-->
+      // let str ="500px"
+      // console.log(/\d+(?=px)/.test(str))
+
+      // Negative Lookahead (?!)
+      // Match this Only if something does NOT follow-->
+      // let str = "500em";
+      // console.log(/\d+(?!px)/.test(str))
+
+      // Password Validation =>
+      // At least 8 character
+      // At least 1 upperCase
+      // At least 1 lowerCase
+      // At least 1 Number
+      // console.log(/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{8,}$/.test("password"))
+
+      // Email Validation=>
+      // Email = "kshahzaib07@gmail.com"
+      // console.log(/^[\w.-]+@[\w.-]+\.\w{2,}$/.test(Email))
+
+      // UserName Validation =>
+      // letter & numbers only
+      // 4-12 characters
+      // Must start with letter
+
+      //   let usernameRegex = /^[a-zA-Z][a-zA-Z0-9]{3,11}$/;
+      //   console.log(usernameRegex.test("user123"))
+      //   console.log(usernameRegex.test("1user"))
+
+      // Prevent Weak Password =>
+      // /^(?!password).{8,}$/i.test("password")
+
+    //   let input = "user@#123";
+    //   let clean = input.replace(/[^\w]/g, "");
+    //   console.log(clean); // user123
+
+    // -------Practice------->
+
+    // Extract number only if followed by kg
+    // console.log("Weight 70kg".match(/\d+(?=kg)/))
+
+    // Validate password=> min 6 char / at least 1 number / at least 1 letter
+    console.log(/(?=[a-zA-Z])(?=[0-9])/)
+
+
     </script>
-</body>
+  </body>
 </html>
